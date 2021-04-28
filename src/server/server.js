@@ -4,6 +4,13 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
+/**
+ * servePage
+ * serve a single page
+ * @param {String} staticPath path of the file to give
+ * @param {String} contentType MIME type of the file
+ * @param {Object} res http responce
+ */
 const servePage = (staticPath, contentType, res) => {
   const filePath = path.join(__dirname, staticPath);
 
